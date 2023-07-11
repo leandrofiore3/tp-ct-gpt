@@ -2,10 +2,13 @@
 // - Luego, dos dígitos numéricos.
 // - A continuación, un guión (-).
 // - Después, exactamente diez dígitos numéricos.
+// - Finalmente, la cadena debe terminar con un número.
 
 function validatePhone() {
-   let tuRegex; // Agrega tu regex
+   let tuRegex = /^\+\d{2}-\d{10}$/;
    return tuRegex;
-}
+ }
+ 
+
 
 module.exports = validatePhone;
