@@ -1,1 +1,51 @@
 /* AQUÍ VAN TUS ESTILOS */
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.container h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.container button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+.container button:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.container button:focus {
+  outline: none;
+}
+
+.container button:active {
+  transform: scale(0.95);
+}
+
+/* Path: 01 - Snippet Code\Parte 2\src\RandomColor.js */
+/* AQUÍ VA TU CÓDIGO */
+
+
