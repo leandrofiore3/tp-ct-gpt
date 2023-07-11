@@ -8,7 +8,5 @@ function validatePhone() {
    let tuRegex = /^\+\d{2}-\d{10}$/;
    return tuRegex;
  }
- 
-
 
 module.exports = validatePhone;
