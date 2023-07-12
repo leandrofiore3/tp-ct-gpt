@@ -1,4 +1,12 @@
 const findLargestWord = (sentence) => {
+   if (typeof sentence !== 'string') {
+      throw new Error('Se esperaba una cadena de texto como argumento');
+   }
+
+   if (sentence === '') {
+      return '';
+   }
+
    let words = sentence.split(' ');
    let largestWord = '';
 
@@ -12,3 +20,4 @@ const findLargestWord = (sentence) => {
 };
 
 module.exports = findLargestWord;
+

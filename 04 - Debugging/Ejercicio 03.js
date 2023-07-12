@@ -7,6 +7,8 @@ const isPalindrome = (str) => {
    return cleanStr === reversed;
 };
 
-isPalindrome();
+const result = isPalindrome('Anita lava la tina');
+
 
 module.exports = isPalindrome;
+
