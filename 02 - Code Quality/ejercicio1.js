@@ -1,17 +1,22 @@
-function complicatedLevelOne(arr) {
-   var result = 0;
-
-   for (var i = 0; i < arr.length; i++) {
-      result += arr[i];
+function complicatedLevelOne(arr) {// eslint-disable-line no-unused-vars
+   let result = 0;
+   const arrLength = arr.length;
+ 
+   for (let i = 0; i < arrLength; i++) {
+     result += arr[i];
    }
-
-   if (arr[i] % 2 === 0) {
-      result *= i;
+ 
+   const lastElement = arr[arrLength - 1];
+   
+   if (lastElement % 2 === 0) {
+     result *= arrLength;
    } else {
-      result -= i;
+     result -= arrLength;
    }
-
+ 
    return result;
-}
+ }
+ 
 
-console.log(complicatedLevelOne([3, 5, 2, 6, 3, 5]));
+console.log(complicatedLevelOne([3, 5, 2, 6, 3, 5])); 
+
